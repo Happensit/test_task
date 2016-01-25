@@ -1,0 +1,27 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+    <h3>Rest application for station metro Saint-Petersburg</h3>
+
+    <hr>
+    <ul>
+        <li>
+            <strong>GET </strong> <a href="/station" target="_blank">All station return status 200</a>
+        </li>
+        <li>
+            <strong>GET </strong> /station/line/{id} <a href="/station/line/1" target="_blank">  All station in one line return status 200</a>
+        </li>
+        <li>
+            <strong>POST </strong> /station?order=8&line_id=4&name=Test station&lat=59.907417&lng=30.483311 Create station return status 201
+        </li>
+        <li>
+            <strong>GET </strong>  /station/{id} <a href="/station/1" target="_blank"> One station return status 200</a>
+        </li>
+        <li>
+            <strong>PATH </strong> /station/{id}  Update station return status 204
+        </li>
+        <li>
+            <strong>DELETE </strong> /station/{id}  Delete station return status 204
+        </li>
+    </ul>
+
+ {% endblock %}

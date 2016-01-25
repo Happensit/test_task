@@ -1,4 +1,4 @@
-## test_task
+## Test task
 
 git clone https://github.com/Happensit/test_task.git .
 
